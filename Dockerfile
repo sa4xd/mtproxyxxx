@@ -17,7 +17,9 @@ RUN set -ex \
     && chmod +x /docker-entrypoint.d/40-mtproxy-start.sh \
     && cp -f nginx/default.conf /etc/nginx/conf.d/default.conf \
     && cp -f nginx/ip_white.conf /etc/nginx/ip_white.conf \
-    && cp -f nginx/nginx.conf /etc/nginx/nginx.conf
+    && cp -f nginx/nginx.conf /etc/nginx/nginx.conf \
+    && cp -f nginx/static.conf /etc/nginx/conf.d/static.conf
+
 
 # build mtproxy and install php
 RUN set -ex \
