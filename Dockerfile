@@ -38,4 +38,5 @@ RUN set -ex \
     && apt-get autoremove --purge -y \
     && rm -rf /var/lib/apt/lists/*
 
-EXPOSE 80 443
+EXPOSE 80 443 3000
+
